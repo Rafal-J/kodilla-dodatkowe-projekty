@@ -5,7 +5,7 @@ import java.util.Arrays;
 
 public class Printer {
     public static void printChoices(String playerChoice, String computerChoice) {
-        ArrayList<String> possibleChoices = new ArrayList<>(Arrays.asList("kamień","papier", "nożyczki"));
+        ArrayList<String> possibleChoices = new ArrayList<>(Arrays.asList("nożyczki","papier", "kamień", "jaszczurka", "Spock"));
         System.out.println("Gracz wybrał: " + possibleChoices.get(Integer.parseInt(playerChoice)-1));
         System.out.println("Komputer wybrał: " + possibleChoices.get(Integer.parseInt(computerChoice)-1));
     }

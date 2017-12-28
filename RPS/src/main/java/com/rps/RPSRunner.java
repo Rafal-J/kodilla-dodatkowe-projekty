@@ -5,7 +5,8 @@ import com.rps.game.PrepareGame;
 
 public class RPSRunner {
     public static void main(String[] args){
-        System.out.println("Papier-Kamień-Nożyczki (2017)");
+        System.out.println("Papier-Kamień-Nożyczki (2017)\n" +
+        "wersja rozszerzona");
         Game game;
         String status = "";
         String playerName;

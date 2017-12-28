@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.List;
 
 public class RoundResult {
-    private static final ArrayList<String> playerWon = new ArrayList<>(Arrays.asList("32","21","13"));
+    private static final ArrayList<String> playerWon = new ArrayList<>(Arrays.asList("12","23","34", "45", "51", "14", "25", "31", "42", "53"));
 
     public static List<Integer> whoWins(String playerChoice, String computerChoice){
         List<Integer> points = new ArrayList<>();

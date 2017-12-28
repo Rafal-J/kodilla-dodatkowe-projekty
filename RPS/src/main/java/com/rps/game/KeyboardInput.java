@@ -3,7 +3,7 @@ package com.rps.game;
 import java.util.*;
 
 public class KeyboardInput {
-    private static final List<String> possibleChoice = new ArrayList<>(Arrays.asList("1", "2", "3", "x", "n"));
+    private static final List<String> possibleChoice = new ArrayList<>(Arrays.asList("1", "2", "3", "4", "5", "x", "n"));
 
     public static String playerChoice() {
         Scanner scanner = new Scanner(System.in);
@@ -27,7 +27,7 @@ public class KeyboardInput {
 
     public static String computerChoice() {
         Random random = new Random();
-        Integer computerChoice = random.nextInt(3) + 1;
+        Integer computerChoice = random.nextInt(5) + 1;
         return computerChoice.toString();
     }
 
