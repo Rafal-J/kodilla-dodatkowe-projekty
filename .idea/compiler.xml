@@ -5,8 +5,18 @@
       <profile default="true" name="Default" enabled="true" />
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="Kodilla-dodatkowe-projekty-Sud_main" target="1.8" />
+      <module name="Kodilla-dodatkowe-projekty-Sud_test" target="1.8" />
+      <module name="Kodilla-dodatkowe-projekty-Sudoku_main" target="1.8" />
+      <module name="Kodilla-dodatkowe-projekty-Sudoku_test" target="1.8" />
       <module name="RPS_main" target="1.8" />
       <module name="RPS_test" target="1.8" />
+      <module name="Sud_main" target="1.8" />
+      <module name="Sud_test" target="1.8" />
+      <module name="Sudoku_main" target="1.8" />
+      <module name="SUDOKU_main" target="1.8" />
+      <module name="SUDOKU_test" target="1.8" />
+      <module name="Sudoku_test" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

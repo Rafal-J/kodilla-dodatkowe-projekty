@@ -3,9 +3,19 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Kodilla-dodatkowe-projekty.iml" filepath="$PROJECT_DIR$/Kodilla-dodatkowe-projekty.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Kodilla-dodatkowe-projekty-Sud_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Kodilla-dodatkowe-projekty-Sud_main.iml" group="Sud" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Kodilla-dodatkowe-projekty-Sud_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Kodilla-dodatkowe-projekty-Sud_test.iml" group="Sud" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Kodilla-dodatkowe-projekty-Sudoku.iml" filepath="$PROJECT_DIR$/.idea/modules/Kodilla-dodatkowe-projekty-Sudoku.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Kodilla-dodatkowe-projekty-Sudoku_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Kodilla-dodatkowe-projekty-Sudoku_main.iml" group="Sudoku" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Kodilla-dodatkowe-projekty-Sudoku_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Kodilla-dodatkowe-projekty-Sudoku_test.iml" group="Sudoku" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/RPS.iml" filepath="$PROJECT_DIR$/.idea/modules/RPS.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/RPS_main.iml" filepath="$PROJECT_DIR$/.idea/modules/RPS_main.iml" group="RPS" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/RPS_test.iml" filepath="$PROJECT_DIR$/.idea/modules/RPS_test.iml" group="RPS" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Sud_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Sud_main.iml" group="Sud" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Sud_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Sud_test.iml" group="Sud" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Sudoku.iml" filepath="$PROJECT_DIR$/.idea/modules/Sudoku.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Sudoku_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Sudoku_main.iml" group="Sudoku" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Sudoku_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Sudoku_test.iml" group="Sudoku" />
     </modules>
   </component>
 </project>
