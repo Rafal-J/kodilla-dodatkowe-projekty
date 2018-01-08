@@ -1,7 +1,6 @@
 package com.sudoku.game;
 
 
-import com.sudoku.board.Board;
 import com.sudoku.board.Field;
 
 import java.util.ArrayList;
@@ -9,8 +8,8 @@ import java.util.List;
 
 public class SolveByTry {
     private static final int COMPLETE = 0;
-    private static final int NOTCOMPLETE = 1;
-    private static final int NOTCORRECT = 2;
+    private static final int INCOMPLETE = 1;
+    private static final int INCORRECT = 2;
     private static final int UNKNOWN = 3;
 
     public static int findSolution(Field[][] deepCopyBoard, Field[][] originalBoard) {
@@ -23,17 +22,17 @@ public class SolveByTry {
         for(int tryNumber = 0; tryNumber < boards.size(); tryNumber++) {
             possibleSolution = SolveByLogic.solveSudoku(boards.get(tryNumber));
             validation = Validator.validateSolution(possibleSolution, originalBoard);
-            if(validation == NOTCOMPLETE) {
+            if(validation == INCOMPLETE) {
                 validation = SolveByTry.findSolution(possibleSolution, originalBoard);
                 if(validation == COMPLETE) {
                     return COMPLETE;
                 }
-                else if(validation == NOTCORRECT) {
+                else if(validation == INCORRECT) {
                     continue;
                 }
             }
         }
-        return NOTCORRECT;
+        return INCORRECT;
     }
 
     public static int[] findNextTry(Field[][] board) {

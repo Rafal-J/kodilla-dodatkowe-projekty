@@ -10,8 +10,8 @@ import java.util.List;
 public class Validator {
     private static final String[] numbers = {"1", "2", "3", "4", "5", "6", "7", "8", "9"};
     private static final int COMPLETE = 0;
-    private static final int NOTCOMPLETE = 1;
-    private static final int NOTCORRECT = 2;
+    private static final int INCOMPLETE = 1;
+    private static final int INCORRECT = 2;
 
     public static int validateSolution(Field[][] board, Field[][]... orgBoard) {
         if(isComplete(board)) {
@@ -21,10 +21,10 @@ public class Validator {
             return COMPLETE;
         }
         if(isCorrect(board)) {
-            return NOTCOMPLETE;
+            return INCOMPLETE;
         }
         else {
-            return NOTCORRECT;
+            return INCORRECT;
         }
     }
 

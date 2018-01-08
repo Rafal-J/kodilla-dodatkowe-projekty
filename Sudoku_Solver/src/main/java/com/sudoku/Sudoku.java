@@ -9,8 +9,8 @@ import com.sudoku.game.Validator;
 
 public class Sudoku {
     private static final int COMPLETE = 0;
-    private static final int NOTCOMPLETE = 1;
-    private static final int NOTCORRECT = 2;
+    private static final int INCOMPLETE = 1;
+    private static final int INCORRECT = 2;
 
     public static void main(String[] args) {
         System.out.println("ROZWIĄZYWARKA SUDOKU BY RJ");
@@ -29,7 +29,7 @@ public class Sudoku {
                         System.out.println("PRAWIDLOWE ROZWIĄZANIE");
                         break;
                 }
-                    case NOTCOMPLETE: {
+                    case INCOMPLETE: {
                         System.out.println("ROZWIĄZANIE JEST NIEKOMPLETNE");
                         if (UserChoice.solveTrying().equals("t")) {
                             SolveByTry.findSolution(myBoard, myBoard);
@@ -37,13 +37,13 @@ public class Sudoku {
                             if(Validator.validateSolution(myBoard) == COMPLETE) {
                                 System.out.println("PRAWIDLOWE ROZWIĄZANIE");
                             }
-                            else if(Validator.validateSolution(myBoard) == NOTCORRECT) {
+                            else if(Validator.validateSolution(myBoard) == INCORRECT) {
                                 System.out.println("ROZWIĄZANIE JEST BLEDNE. PRAWDOPODOBNIE PLANSZA STARTOWA ZAWIERA BLAD I SUDOKU NIE MA ROZWIĄZANIA");
                             }
                         }
                         break;
                     }
-                    case NOTCORRECT: {
+                    case INCORRECT: {
                         System.out.println("ROZWIĄZANIE JEST BLEDNE. PRAWDOPODOBNIE PLANSZA STARTOWA ZAWIERA BLAD I SUDOKU NIE MA ROZWIĄZANIA");
                     }
                 }
