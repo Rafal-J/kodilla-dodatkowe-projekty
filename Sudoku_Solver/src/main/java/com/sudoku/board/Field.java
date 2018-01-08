@@ -10,16 +10,15 @@ import java.util.List;
 
 @Getter
 @Setter
-public class Number {
+public class Field {
     public String correctNumber;
     public List<String> possibleNumbers = new ArrayList<>();
     public String EMPTY = " ";
 
-    public Number(String correctNumber) {
+    public Field(String correctNumber) {
         this.correctNumber = correctNumber;
         if(correctNumber.equals(EMPTY)) {
             this.possibleNumbers = new ArrayList<>(Arrays.asList("1", "2", "3", "4", "5", "6", "7", "8", "9"));
         }
     }
-
 }

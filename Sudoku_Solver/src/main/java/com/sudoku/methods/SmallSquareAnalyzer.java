@@ -1,10 +1,10 @@
 package com.sudoku.methods;
 
-import com.sudoku.board.Number;
+import com.sudoku.board.Field;
 
 public class SmallSquareAnalyzer {
     private final static String EMPTY = " ";
-    public static void analyze(Number[][] board){
+    public static void analyze(Field[][] board){
         int smallSquareLeftUpperCornerR = 0;
         int smallSquareLeftUpperCornerC = 0;
 

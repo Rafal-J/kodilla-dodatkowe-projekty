@@ -1,9 +1,9 @@
 package com.sudoku.methods;
 
-import com.sudoku.board.Number;
+import com.sudoku.board.Field;
 
 public class NakedSingle {
-    public static void find(Number[][] board) {
+    public static void find(Field[][] board) {
         String correctNumber = " ";
         Boolean foundNewCorrectNumber = true;
 

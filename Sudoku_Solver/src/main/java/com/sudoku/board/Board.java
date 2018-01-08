@@ -1,36 +1,20 @@
 package com.sudoku.board;
 
 public class Board {
-    public static Number[][] prepareBoard(int selection) {
-        /*String[] textBoard = {"8   1   9",
-                " 5 8 7 1 ",
-                "  4 9 7  ",
-                " 6 7 1 2 ",
-                "5 8 6 1 7",
-                " 1 5 2 9 ",
-                "  7 4 6  ",
-                " 8 3 9 4 ",
-                "3   5   8"
-        };*/
-
-        String[] textBoard = SudokuCollection.getBoard(selection);
-
-        Boolean boardValidator = true;
-        for (int i = 0; i < textBoard.length; i++) {
-            if (textBoard[i].length() != 9) {
-                boardValidator = false;
-                i++;
-                System.out.println("Problem z " + i + ". wierszem.\n" +
-                        "Długość wiersza: " + textBoard[i - 1].length());
-                break;
-            }
+    public static Field[][] prepareBoard(int choice) {
+        String[] textBoard = new String[9];
+        if(choice == 0) {
+            textBoard = UserBoard.prepareBoard();
+        }
+        else {
+            textBoard = BoardCollection.getBoard(choice);
         }
 
-        Number[][] board = new Number[9][9];
-        Number number;
+        Field[][] board = new Field[9][9];
+        Field number;
         for (int i = 0; i < 9; i++) {
             for (int k = 0; k < 9; k++) {
-                number = new Number(textBoard[i].substring(k, k + 1));
+                number = new Field(textBoard[i].substring(k, k + 1));
                 board[i][k] = number;
             }
         }
@@ -38,18 +22,18 @@ public class Board {
         return board;
     }
 
-    public static void printBoard(Number[][] board) {
+    public static void printBoard(Field[][] board) {
         String[][] printedBoard = new String[13][13];
 
-        for (int i = 0; i < 13; i = i + 4) {
-            for (int k = 0; k < 13; k++) {
-                printedBoard[i][k] = "-";
+        for (int r = 0; r < 13; r = r + 4) {
+            for (int c = 0; c < 13; c++) {
+                printedBoard[r][c] = "-";
             }
         }
 
-        for (int i = 0; i < 13; i = i + 4) {
-            for (int k = 0; k < 13; k++) {
-                printedBoard[k][i] = "|";
+        for (int c = 0; c < 13; c = c + 4) {
+            for (int r = 1; r < 12; r++) {
+                printedBoard[r][c] = "|";
             }
         }
 
@@ -57,7 +41,9 @@ public class Board {
         int y = 0;
 
         for (int i = 0; i < 13; i++) {
-            for (int k = 0; k < 13; k++) {
+            for (int k = 0; k < 13; k++)
+
+            {
                 if (printedBoard[i][k] == null) {
                     System.out.print(board[y][x].getCorrectNumber());
                     x++;
@@ -74,28 +60,31 @@ public class Board {
         System.out.println();
     }
 
-    public static void testPrint(Number[][] myBoard) {
-        for (int r = 0; r < 1; r++) {
-            for (int c = 7; c < 9; c++) {
-                // if(myBoard[i][k].getCorrectNumber().equals(" ")) {
-                System.out.print("xy: " + (r + 1) + "" + (c + 1) + " " + myBoard[r][c].getCorrectNumber() + " - ");
-                for (int d = 0; d < myBoard[r][c].getPossibleNumbers().size(); d++) {
-                    System.out.print(myBoard[r][c].getPossibleNumbers().get(d));
-                }
-                // }
-                //  if(myBoard[i][k].getCorrectNumber().equals(" ")) {
-                System.out.println();
-                // }
+    public static void deepCopyToOriginal(Field[][] deepCopyBoard, Field[][] originalBoard) {
+        for(int r = 0; r < 9; r++) {
+            for(int c = 0; c < 9; c++) {
+                originalBoard[r][c].setCorrectNumber(deepCopyBoard[r][c].getCorrectNumber());
+                originalBoard[r][c].getPossibleNumbers().clear();
             }
         }
     }
 
-    public static void printClearBoard(Number[][] board) {
-        for (int i = 0; i < 9; i++) {
-            for (int k = 0; k < 9; k++) {
-                System.out.print(board[k][i].getCorrectNumber());
+    public static void testPrint(Field[][] myBoard) {
+        int sum = 0;
+        for (int r = 0; r < 9; r++) {
+            for (int c = 0; c < 9; c++) {
+                // if(myBoard[i][k].getCorrectNumber().equals(" ")) {
+                /*System.out.print("xy: " + (r + 1) + "" + (c + 1) + " " + myBoard[r][c].getCorrectNumber() + " - ");
+                for (int d = 0; d < myBoard[r][c].getPossibleNumbers().size(); d++) {
+                    System.out.print(myBoard[r][c].getPossibleNumbers().get(d));
+                }*/
+                // }
+                //  if(myBoard[i][k].getCorrectNumber().equals(" ")) {
+                //System.out.println();
+                // }
+                sum = sum + myBoard[r][c].getPossibleNumbers().size();
             }
-            System.out.println();
         }
+        System.out.println(sum);
     }
 }

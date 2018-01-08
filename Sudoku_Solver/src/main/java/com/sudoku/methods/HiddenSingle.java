@@ -1,14 +1,20 @@
 package com.sudoku.methods;
 
-import com.sudoku.board.Number;
+import com.sudoku.board.Field;
 
 public class HiddenSingle {
-    public static void findInSmallSquare(Number[][] board) {
+    public static void find(Field[][] board) {
+        HiddenSingle.findInRow(board);
+        HiddenSingle.findInColumn(board);
+        HiddenSingle.findInSmallSquare(board);
+    }
+
+    public static void findInSmallSquare(Field[][] board) {
         Boolean foundNewCorrectNumber = true;
         int counter = 0;
         int column = 0;
         int row = 0;
-        Number correctNumber = new Number(" ");
+        Field correctNumber = new Field(" ");
 
         while(foundNewCorrectNumber){
             foundNewCorrectNumber = false;
@@ -39,12 +45,12 @@ public class HiddenSingle {
         }
     }
 
-    public static void findInRow(Number[][] board) {
+    public static void findInRow(Field[][] board) {
         Boolean foundNewCorrectNumber = true;
         int counter = 0;
         int row = 0;
         int column = 0;
-        Number correctNumber = new Number(" ");
+        Field correctNumber = new Field(" ");
 
         while(foundNewCorrectNumber){
             foundNewCorrectNumber = false;
@@ -70,12 +76,12 @@ public class HiddenSingle {
         }
     }
 
-    public static void findInColumn(Number[][] board) {
+    public static void findInColumn(Field[][] board) {
         Boolean foundNewCorrectNumber = true;
         int counter = 0;
         int row = 0;
         int column = 0;
-        Number correctNumber = new Number(" ");
+        Field correctNumber = new Field(" ");
 
         while(foundNewCorrectNumber){
             foundNewCorrectNumber = false;

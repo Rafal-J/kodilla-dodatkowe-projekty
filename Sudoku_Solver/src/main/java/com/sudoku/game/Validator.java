@@ -1,6 +1,7 @@
 package com.sudoku.game;
 
-import com.sudoku.board.Number;
+import com.sudoku.board.Board;
+import com.sudoku.board.Field;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -8,7 +9,40 @@ import java.util.List;
 
 public class Validator {
     private static final String[] numbers = {"1", "2", "3", "4", "5", "6", "7", "8", "9"};
-    public static boolean validateSolution(Number[][] board) {
+    private static final int COMPLETE = 0;
+    private static final int NOTCOMPLETE = 1;
+    private static final int NOTCORRECT = 2;
+
+    public static int validateSolution(Field[][] board, Field[][]... orgBoard) {
+        if(isComplete(board)) {
+            if(orgBoard.length > 0) {
+                Board.deepCopyToOriginal(board, orgBoard[0]);
+            }
+            return COMPLETE;
+        }
+        if(isCorrect(board)) {
+            return NOTCOMPLETE;
+        }
+        else {
+            return NOTCORRECT;
+        }
+    }
+
+    public static boolean isCorrect(Field[][] board) {
+        Field number;
+        int validationStatus = 0;
+        for(int r = 0; r < 9; r++) {
+            for(int c = 0; c < 9; c++) {
+                number = board[r][c];
+                if(number.getCorrectNumber().equals(" ") && number.getPossibleNumbers().size() == 0) {
+                    return false;
+                }
+            }
+        }
+        return true;
+    }
+
+    public static boolean isComplete(Field[][] board) {
         boolean test = validateColumns(board);
         if(!test) {
             return test;
@@ -22,7 +56,7 @@ public class Validator {
         return test;
     }
 
-    public static boolean validateColumns(Number[][] board) {
+    public static boolean validateColumns(Field[][] board) {
         List<String> number;
         for(int r = 0; r < 9; r++) {
             number = new ArrayList<>(Arrays.asList(numbers));
@@ -36,7 +70,7 @@ public class Validator {
         return true;
     }
 
-    public static boolean validateRows(Number[][] board) {
+    public static boolean validateRows(Field[][] board) {
         List<String> number;
         for(int c = 0; c < 9; c++) {
             number = new ArrayList<>(Arrays.asList(numbers));
@@ -50,4 +84,13 @@ public class Validator {
         return true;
     }
 
+    public static int countTotalPossibleNumbersQty(Field[][] myBoard) {
+        int sum = 0;
+        for (int r = 0; r < 9; r++) {
+            for (int c = 0; c < 9; c++) {
+                sum = sum + myBoard[r][c].getPossibleNumbers().size();
+            }
+        }
+        return sum;
+    }
 }

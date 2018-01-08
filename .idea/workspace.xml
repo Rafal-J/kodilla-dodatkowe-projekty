@@ -2,35 +2,38 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bc15afc1-5a2c-4461-a981-5f73590a98cf" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_projectlombok_lombok_1_16_16.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules/Kodilla-dodatkowe-projekty-Sud_main.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules/Kodilla-dodatkowe-projekty-Sud_test.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules/Kodilla-dodatkowe-projekty-Sudoku.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules/Kodilla-dodatkowe-projekty-Sudoku_main.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules/Kodilla-dodatkowe-projekty-Sudoku_test.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules/Sudoku_main.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules/Sudoku_test.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Sudoku_Solver/src/main/java/com/sudoku/Sudoku.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Sudoku_Solver/src/main/java/com/sudoku/board/Board.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Sudoku_Solver/src/main/java/com/sudoku/board/Number.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Sudoku_Solver/src/main/java/com/sudoku/board/SudokuCollection.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Sudoku_Solver/src/main/java/com/sudoku/game/Game.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Sudoku_Solver/src/main/java/com/sudoku/game/Validator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Sudoku_Solver/src/main/java/com/sudoku/methods/ColumnAnalyzer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Sudoku_Solver/src/main/java/com/sudoku/methods/HiddenSingle.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Sudoku_Solver/src/main/java/com/sudoku/methods/LockedCandidate.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Sudoku_Solver/src/main/java/com/sudoku/methods/NakedSingle.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Sudoku_Solver/src/main/java/com/sudoku/methods/NumberEliminator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Sudoku_Solver/src/main/java/com/sudoku/methods/RowAnalyzer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Sudoku_Solver/src/main/java/com/sudoku/methods/SmallSquareAnalyzer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RPS/.gradle/3.5-rc-2/taskHistory/fileHashes.bin" afterPath="$PROJECT_DIR$/RPS/.gradle/3.5-rc-2/taskHistory/fileHashes.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RPS/.gradle/3.5-rc-2/taskHistory/fileSnapshots.bin" afterPath="$PROJECT_DIR$/RPS/.gradle/3.5-rc-2/taskHistory/fileSnapshots.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RPS/.gradle/3.5-rc-2/taskHistory/taskHistory.bin" afterPath="$PROJECT_DIR$/RPS/.gradle/3.5-rc-2/taskHistory/taskHistory.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RPS/.gradle/3.5-rc-2/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/RPS/.gradle/3.5-rc-2/taskHistory/taskHistory.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/gradle.xml" afterPath="$PROJECT_DIR$/.idea/gradle.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Sudoku_Solver/src/main/java/com/sudoku/board/UserBoard.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Sudoku_Solver/src/main/java/com/sudoku/game/SolveByLogic.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Sudoku_Solver/src/main/java/com/sudoku/game/SolveByTry.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Sudoku_Solver/src/main/java/com/sudoku/game/UserChoice.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Sudoku_Solver/src/main/java/com/sudoku/methods/LockedPairs.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sudoku_Solver/out/production/classes/com/sudoku/board/Number.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sudoku_Solver/out/production/classes/com/sudoku/board/SudokuCollection.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sudoku_Solver/out/production/classes/com/sudoku/game/Game.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sudoku_Solver/src/main/java/com/sudoku/game/Game.java" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Sudoku_Solver/src/main/java/com/sudoku/board/Number.java" afterPath="$PROJECT_DIR$/Sudoku_Solver/src/main/java/com/sudoku/board/Field.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Sudoku_Solver/src/main/java/com/sudoku/board/SudokuCollection.java" afterPath="$PROJECT_DIR$/Sudoku_Solver/src/main/java/com/sudoku/board/BoardCollection.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sudoku_Solver/out/production/classes/com/sudoku/Sudoku.class" afterPath="$PROJECT_DIR$/Sudoku_Solver/out/production/classes/com/sudoku/Sudoku.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sudoku_Solver/out/production/classes/com/sudoku/board/Board.class" afterPath="$PROJECT_DIR$/Sudoku_Solver/out/production/classes/com/sudoku/board/Board.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sudoku_Solver/out/production/classes/com/sudoku/game/Validator.class" afterPath="$PROJECT_DIR$/Sudoku_Solver/out/production/classes/com/sudoku/game/Validator.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sudoku_Solver/out/production/classes/com/sudoku/methods/ColumnAnalyzer.class" afterPath="$PROJECT_DIR$/Sudoku_Solver/out/production/classes/com/sudoku/methods/ColumnAnalyzer.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sudoku_Solver/out/production/classes/com/sudoku/methods/HiddenSingle.class" afterPath="$PROJECT_DIR$/Sudoku_Solver/out/production/classes/com/sudoku/methods/HiddenSingle.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sudoku_Solver/out/production/classes/com/sudoku/methods/LockedCandidate.class" afterPath="$PROJECT_DIR$/Sudoku_Solver/out/production/classes/com/sudoku/methods/LockedCandidate.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sudoku_Solver/out/production/classes/com/sudoku/methods/NakedSingle.class" afterPath="$PROJECT_DIR$/Sudoku_Solver/out/production/classes/com/sudoku/methods/NakedSingle.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sudoku_Solver/out/production/classes/com/sudoku/methods/NumberEliminator.class" afterPath="$PROJECT_DIR$/Sudoku_Solver/out/production/classes/com/sudoku/methods/NumberEliminator.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sudoku_Solver/out/production/classes/com/sudoku/methods/RowAnalyzer.class" afterPath="$PROJECT_DIR$/Sudoku_Solver/out/production/classes/com/sudoku/methods/RowAnalyzer.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sudoku_Solver/out/production/classes/com/sudoku/methods/SmallSquareAnalyzer.class" afterPath="$PROJECT_DIR$/Sudoku_Solver/out/production/classes/com/sudoku/methods/SmallSquareAnalyzer.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sudoku_Solver/src/main/java/com/sudoku/Sudoku.java" afterPath="$PROJECT_DIR$/Sudoku_Solver/src/main/java/com/sudoku/Sudoku.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sudoku_Solver/src/main/java/com/sudoku/board/Board.java" afterPath="$PROJECT_DIR$/Sudoku_Solver/src/main/java/com/sudoku/board/Board.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sudoku_Solver/src/main/java/com/sudoku/game/Validator.java" afterPath="$PROJECT_DIR$/Sudoku_Solver/src/main/java/com/sudoku/game/Validator.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sudoku_Solver/src/main/java/com/sudoku/methods/ColumnAnalyzer.java" afterPath="$PROJECT_DIR$/Sudoku_Solver/src/main/java/com/sudoku/methods/ColumnAnalyzer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sudoku_Solver/src/main/java/com/sudoku/methods/HiddenSingle.java" afterPath="$PROJECT_DIR$/Sudoku_Solver/src/main/java/com/sudoku/methods/HiddenSingle.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sudoku_Solver/src/main/java/com/sudoku/methods/LockedCandidate.java" afterPath="$PROJECT_DIR$/Sudoku_Solver/src/main/java/com/sudoku/methods/LockedCandidate.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sudoku_Solver/src/main/java/com/sudoku/methods/NakedSingle.java" afterPath="$PROJECT_DIR$/Sudoku_Solver/src/main/java/com/sudoku/methods/NakedSingle.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sudoku_Solver/src/main/java/com/sudoku/methods/NumberEliminator.java" afterPath="$PROJECT_DIR$/Sudoku_Solver/src/main/java/com/sudoku/methods/NumberEliminator.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sudoku_Solver/src/main/java/com/sudoku/methods/RowAnalyzer.java" afterPath="$PROJECT_DIR$/Sudoku_Solver/src/main/java/com/sudoku/methods/RowAnalyzer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sudoku_Solver/src/main/java/com/sudoku/methods/SmallSquareAnalyzer.java" afterPath="$PROJECT_DIR$/Sudoku_Solver/src/main/java/com/sudoku/methods/SmallSquareAnalyzer.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/RPS/.gradle/" />
@@ -84,24 +87,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="NumberEliminator.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Sudoku_Solver/src/main/java/com/sudoku/methods/NumberEliminator.java">
+      <file leaf-file-name="SolveByLogic.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Sudoku_Solver/src/main/java/com/sudoku/game/SolveByLogic.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="30" column="44" lean-forward="false" selection-start-line="30" selection-start-column="44" selection-end-line="30" selection-end-column="44" />
+            <state relative-caret-position="650">
+              <caret line="27" column="1" lean-forward="false" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Game.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Sudoku_Solver/src/main/java/com/sudoku/game/Game.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="194">
-              <caret line="41" column="19" lean-forward="true" selection-start-line="41" selection-start-column="19" selection-end-line="41" selection-end-column="19" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -109,8 +100,8 @@
       <file leaf-file-name="Validator.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Sudoku_Solver/src/main/java/com/sudoku/game/Validator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="21" column="7" lean-forward="false" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
+            <state relative-caret-position="350">
+              <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -118,44 +109,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SmallSquareAnalyzer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Sudoku_Solver/src/main/java/com/sudoku/methods/SmallSquareAnalyzer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="325">
-              <caret line="13" column="52" lean-forward="false" selection-start-line="13" selection-start-column="52" selection-end-line="13" selection-end-column="52" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Board.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Board.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Sudoku_Solver/src/main/java/com/sudoku/board/Board.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="139">
-              <caret line="78" column="26" lean-forward="false" selection-start-line="78" selection-start-column="26" selection-end-line="78" selection-end-column="26" />
+            <state relative-caret-position="1650">
+              <caret line="66" column="65" lean-forward="false" selection-start-line="66" selection-start-column="65" selection-end-line="66" selection-end-column="65" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LockedCandidate.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Sudoku_Solver/src/main/java/com/sudoku/methods/LockedCandidate.java">
+      <file leaf-file-name="UserBoard.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Sudoku_Solver/src/main/java/com/sudoku/board/UserBoard.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="27" column="45" lean-forward="false" selection-start-line="27" selection-start-column="45" selection-end-line="27" selection-end-column="45" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Sudoku.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Sudoku_Solver/src/main/java/com/sudoku/Sudoku.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="9" column="27" lean-forward="false" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
+            <state relative-caret-position="725">
+              <caret line="32" column="31" lean-forward="false" selection-start-line="32" selection-start-column="31" selection-end-line="32" selection-end-column="31" />
               <folding>
-                <element signature="e#208#209#0" expanded="true" />
-                <element signature="e#242#243#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -164,18 +134,28 @@
       <file leaf-file-name="HiddenSingle.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Sudoku_Solver/src/main/java/com/sudoku/methods/HiddenSingle.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="39" column="5" lean-forward="true" selection-start-line="5" selection-start-column="3" selection-end-line="39" selection-end-column="5" />
+            <state relative-caret-position="250">
+              <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SudokuCollection.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Sudoku_Solver/src/main/java/com/sudoku/board/SudokuCollection.java">
+      <file leaf-file-name="Sudoku.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Sudoku_Solver/src/main/java/com/sudoku/Sudoku.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1050">
-              <caret line="43" column="30" lean-forward="false" selection-start-line="43" selection-start-column="30" selection-end-line="43" selection-end-column="30" />
+            <state relative-caret-position="450">
+              <caret line="35" column="54" lean-forward="false" selection-start-line="35" selection-start-column="54" selection-end-line="35" selection-end-column="54" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserChoice.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Sudoku_Solver/src/main/java/com/sudoku/game/UserChoice.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="350">
+              <caret line="17" column="88" lean-forward="false" selection-start-line="17" selection-start-column="88" selection-end-line="17" selection-end-column="88" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -183,12 +163,38 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NakedSingle.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Sudoku_Solver/src/main/java/com/sudoku/methods/NakedSingle.java">
+      <file leaf-file-name="SolveByTry.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Sudoku_Solver/src/main/java/com/sudoku/game/SolveByTry.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="475">
-              <caret line="19" column="84" lean-forward="false" selection-start-line="19" selection-start-column="84" selection-end-line="19" selection-end-column="84" />
-              <folding />
+            <state relative-caret-position="525">
+              <caret line="25" column="43" lean-forward="false" selection-start-line="25" selection-start-column="43" selection-end-line="25" selection-end-column="43" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Field.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Sudoku_Solver/src/main/java/com/sudoku/board/Field.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="12" column="18" lean-forward="false" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BoardCollection.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Sudoku_Solver/src/main/java/com/sudoku/board/BoardCollection.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2350">
+              <caret line="95" column="27" lean-forward="false" selection-start-line="95" selection-start-column="27" selection-end-line="95" selection-end-column="27" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -1525,7 +1531,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/RPS/src/main/java/com/rps/RoundsQty.java" />
         <option value="$PROJECT_DIR$/RPS/src/main/java/com/rps/PlayerName.java" />
         <option value="$PROJECT_DIR$/RPS/src/main/java/com/rps/PrepareGame.java" />
         <option value="$PROJECT_DIR$/RPS/src/main/java/com/rps/Instruction.java" />
@@ -1557,19 +1562,26 @@
         <option value="$PROJECT_DIR$/Sudoku_Game/src/main/java/com/sudoku/board/Number.java" />
         <option value="$PROJECT_DIR$/Sudoku_Game/src/main/java/com/sudoku/methods/NumberEliminator.java" />
         <option value="$PROJECT_DIR$/Sudoku_Solver/build.gradle" />
-        <option value="$PROJECT_DIR$/Sudoku_Solver/src/main/java/com/sudoku/board/Number.java" />
         <option value="$PROJECT_DIR$/Sudoku_Solver/src/main/java/com/sudoku/methods/SmallSquareAnalyzer.java" />
         <option value="$PROJECT_DIR$/Sudoku_Solver/src/main/java/com/sudoku/methods/ColumnAnalyzer.java" />
         <option value="$PROJECT_DIR$/Sudoku_Solver/src/main/java/com/sudoku/methods/RowAnalyzer.java" />
-        <option value="$PROJECT_DIR$/Sudoku_Solver/src/main/java/com/sudoku/Sudoku.java" />
         <option value="$PROJECT_DIR$/Sudoku_Solver/src/main/java/com/sudoku/methods/NakedSingle.java" />
-        <option value="$PROJECT_DIR$/Sudoku_Solver/src/main/java/com/sudoku/game/Validator.java" />
+        <option value="$PROJECT_DIR$/Sudoku_Solver/src/main/java/com/sudoku/methods/NumberEliminator.java" />
+        <option value="$PROJECT_DIR$/Sudoku_Solver/src/main/java/com/sudoku/board/UserBoard.java" />
         <option value="$PROJECT_DIR$/Sudoku_Solver/src/main/java/com/sudoku/board/SudokuCollection.java" />
         <option value="$PROJECT_DIR$/Sudoku_Solver/src/main/java/com/sudoku/methods/HiddenSingle.java" />
-        <option value="$PROJECT_DIR$/Sudoku_Solver/src/main/java/com/sudoku/methods/NumberEliminator.java" />
         <option value="$PROJECT_DIR$/Sudoku_Solver/src/main/java/com/sudoku/methods/LockedCandidate.java" />
+        <option value="$PROJECT_DIR$/Sudoku_Solver/src/main/java/com/sudoku/methods/LockedPairs.java" />
         <option value="$PROJECT_DIR$/Sudoku_Solver/src/main/java/com/sudoku/game/Game.java" />
+        <option value="$PROJECT_DIR$/Sudoku_Solver/src/main/java/com/sudoku/board/BoardCollection.java" />
+        <option value="$PROJECT_DIR$/Sudoku_Solver/src/main/java/com/sudoku/game/SolveByLogic.java" />
         <option value="$PROJECT_DIR$/Sudoku_Solver/src/main/java/com/sudoku/board/Board.java" />
+        <option value="$PROJECT_DIR$/Sudoku_Solver/src/main/java/com/sudoku/board/Number.java" />
+        <option value="$PROJECT_DIR$/Sudoku_Solver/src/main/java/com/sudoku/board/Field.java" />
+        <option value="$PROJECT_DIR$/Sudoku_Solver/src/main/java/com/sudoku/game/UserChoice.java" />
+        <option value="$PROJECT_DIR$/Sudoku_Solver/src/main/java/com/sudoku/game/Validator.java" />
+        <option value="$PROJECT_DIR$/Sudoku_Solver/src/main/java/com/sudoku/Sudoku.java" />
+        <option value="$PROJECT_DIR$/Sudoku_Solver/src/main/java/com/sudoku/game/SolveByTry.java" />
       </list>
     </option>
   </component>
@@ -1602,21 +1614,16 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="AndroidView" />
       <pane id="PackagesPane" />
-      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="Kodilla-dodatkowe-projekty" type="b2602c69:ProjectViewProjectNode" />
               <item name="Kodilla-dodatkowe-projekty" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Kodilla-dodatkowe-projekty" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Kodilla-dodatkowe-projekty" type="462c0819:PsiDirectoryNode" />
-              <item name="RPS" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
               <item name="Kodilla-dodatkowe-projekty" type="b2602c69:ProjectViewProjectNode" />
@@ -1907,15 +1914,23 @@
       <workItem from="1514832689580" duration="2089000" />
       <workItem from="1514834822443" duration="17206000" />
       <workItem from="1514875978366" duration="7391000" />
+      <workItem from="1514883475116" duration="1655000" />
+      <workItem from="1514895427035" duration="960000" />
+      <workItem from="1514933309498" duration="7543000" />
+      <workItem from="1514971827448" duration="3949000" />
+      <workItem from="1515015495242" duration="253000" />
+      <workItem from="1515354330846" duration="11640000" />
+      <workItem from="1515370925457" duration="3843000" />
+      <workItem from="1515392819861" duration="3632000" />
+      <workItem from="1515396516140" duration="965000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52231000" />
+    <option name="totallyTimeSpent" value="86671000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1925,20 +1940,20 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3991228" sideWeight="0.50208336" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5394737" sideWeight="0.49791667" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6381579" sideWeight="0.49791667" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24739583" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3991228" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1960,28 +1975,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/RPS/src/main/java/com/rps/RoundsQty.java" />
-    <entry file="file://$PROJECT_DIR$/RPS/src/main/java/com/rps/game/PrepareGame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="15" column="32" lean-forward="false" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RPS/src/main/java/com/rps/RPSRunner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="9" column="55" lean-forward="false" selection-start-line="9" selection-start-column="55" selection-end-line="9" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RPS/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/RPS/src/main/java/com/rps/RoundsQty.java" />
     <entry file="file://$PROJECT_DIR$/RPS/src/main/java/com/rps/game/PrepareGame.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -2137,13 +2130,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Sudoku_Solver/src/main/java/com/sudoku/board/Number.java">
+    <entry file="file://$PROJECT_DIR$/Sudoku_Solver/src/main/java/com/sudoku/methods/RowAnalyzer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="11" column="7" lean-forward="false" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="275">
+          <caret line="11" column="94" lean-forward="false" selection-start-line="11" selection-start-column="94" selection-end-line="11" selection-end-column="94" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sudoku_Solver/src/main/java/com/sudoku/methods/SmallSquareAnalyzer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="13" column="52" lean-forward="false" selection-start-line="13" selection-start-column="52" selection-end-line="13" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sudoku_Solver/src/main/java/com/sudoku/methods/NakedSingle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="18" column="23" lean-forward="false" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sudoku_Solver/src/main/java/com/sudoku/methods/NumberEliminator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" column="62" lean-forward="false" selection-start-line="6" selection-start-column="62" selection-end-line="6" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sudoku_Solver/src/main/java/com/sudoku/methods/LockedCandidate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sudoku_Solver/src/main/java/com/sudoku/methods/LockedPairs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="776">
+          <caret line="82" column="1" lean-forward="false" selection-start-line="82" selection-start-column="1" selection-end-line="82" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -2155,89 +2180,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Sudoku_Solver/src/main/java/com/sudoku/methods/RowAnalyzer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="11" column="94" lean-forward="false" selection-start-line="11" selection-start-column="94" selection-end-line="11" selection-end-column="94" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sudoku_Solver/src/main/java/com/sudoku/methods/SmallSquareAnalyzer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="13" column="52" lean-forward="false" selection-start-line="13" selection-start-column="52" selection-end-line="13" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sudoku_Solver/src/main/java/com/sudoku/methods/NakedSingle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="19" column="84" lean-forward="false" selection-start-line="19" selection-start-column="84" selection-end-line="19" selection-end-column="84" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sudoku_Solver/src/main/java/com/sudoku/game/Validator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="21" column="7" lean-forward="false" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sudoku_Solver/src/main/java/com/sudoku/board/SudokuCollection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1050">
-          <caret line="43" column="30" lean-forward="false" selection-start-line="43" selection-start-column="30" selection-end-line="43" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sudoku_Solver/src/main/java/com/sudoku/Sudoku.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="9" column="27" lean-forward="false" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
-          <folding>
-            <element signature="e#208#209#0" expanded="true" />
-            <element signature="e#242#243#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Sudoku_Solver/src/main/java/com/sudoku/methods/HiddenSingle.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="39" column="5" lean-forward="true" selection-start-line="5" selection-start-column="3" selection-end-line="39" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sudoku_Solver/src/main/java/com/sudoku/methods/NumberEliminator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="30" column="44" lean-forward="false" selection-start-line="30" selection-start-column="44" selection-end-line="30" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sudoku_Solver/src/main/java/com/sudoku/methods/LockedCandidate.java">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="250">
-          <caret line="27" column="45" lean-forward="false" selection-start-line="27" selection-start-column="45" selection-end-line="27" selection-end-column="45" />
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Sudoku_Solver/src/main/java/com/sudoku/game/Game.java">
+    <entry file="file://$PROJECT_DIR$/Sudoku_Solver/src/main/java/com/sudoku/board/BoardCollection.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="41" column="19" lean-forward="true" selection-start-line="41" selection-start-column="19" selection-end-line="41" selection-end-column="19" />
+        <state relative-caret-position="2350">
+          <caret line="95" column="27" lean-forward="false" selection-start-line="95" selection-start-column="27" selection-end-line="95" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -2246,8 +2200,74 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Sudoku_Solver/src/main/java/com/sudoku/board/Board.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="78" column="26" lean-forward="false" selection-start-line="78" selection-start-column="26" selection-end-line="78" selection-end-column="26" />
+        <state relative-caret-position="1650">
+          <caret line="66" column="65" lean-forward="false" selection-start-line="66" selection-start-column="65" selection-end-line="66" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sudoku_Solver/src/main/java/com/sudoku/board/UserBoard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="725">
+          <caret line="32" column="31" lean-forward="false" selection-start-line="32" selection-start-column="31" selection-end-line="32" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sudoku_Solver/src/main/java/com/sudoku/board/Field.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="12" column="18" lean-forward="false" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sudoku_Solver/src/main/java/com/sudoku/game/SolveByLogic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="650">
+          <caret line="27" column="1" lean-forward="false" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sudoku_Solver/src/main/java/com/sudoku/game/UserChoice.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="17" column="88" lean-forward="false" selection-start-line="17" selection-start-column="88" selection-end-line="17" selection-end-column="88" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sudoku_Solver/src/main/java/com/sudoku/game/Validator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sudoku_Solver/src/main/java/com/sudoku/game/SolveByTry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="25" column="43" lean-forward="false" selection-start-line="25" selection-start-column="43" selection-end-line="25" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sudoku_Solver/src/main/java/com/sudoku/Sudoku.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="35" column="54" lean-forward="false" selection-start-line="35" selection-start-column="54" selection-end-line="35" selection-end-column="54" />
           <folding />
         </state>
       </provider>
@@ -2304,7 +2324,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>Sudoku_main|Sudoku</last-edited>
+          <last-edited>Kodilla-dodatkowe-projekty-Sudoku_main|Sudoku</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
