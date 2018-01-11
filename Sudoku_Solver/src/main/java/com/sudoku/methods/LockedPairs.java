@@ -7,12 +7,12 @@ import java.util.List;
 
 public class LockedPairs {
     public static void find(Field[][] board) {
-        LockedPairs.findPairInColumn(board);
-        LockedPairs.findPairInRow(board);
-        LockedPairs.findPairInSquare(board);
+        LockedPairs.findPairsInColumn(board);
+        LockedPairs.findPairsInRow(board);
+        LockedPairs.findPairsInSquare(board);
     }
 
-    public static void findPairInRow(Field[][] board) {
+    private static void findPairsInRow(Field[][] board) {
         List<Field> data = new ArrayList<>();
         for(int r = 0; r < 9; r++) {
             for(int c = 0; c < 9; c++) {
@@ -22,7 +22,7 @@ public class LockedPairs {
         }
     }
 
-    public static void findPairInColumn(Field[][] board) {
+    private static void findPairsInColumn(Field[][] board) {
         List<Field> data = new ArrayList<>();
         for(int c = 0; c < 9; c++) {
             for(int r = 0; r < 9; r++) {
@@ -32,7 +32,7 @@ public class LockedPairs {
         }
     }
 
-    public static void findPairInSquare(Field[][] board) {
+    private static void findPairsInSquare(Field[][] board) {
         List<Field> data = new ArrayList<>();
 
         for (int r1 = 0; r1 < 9; r1 = r1 + 3) {
@@ -47,11 +47,11 @@ public class LockedPairs {
         }
     }
 
-     public static void analyze(List<Field> data) {
+     private static void analyze(List<Field> data) {
         String firstPair = " ";
-        String secondPair = "  ";
-        String firstNumber = " ";
-        String secondNumber = " ";
+        String secondPair;
+        String firstNumber;
+        String secondNumber;
 
         for(int n = 0; n < 8; n++){
             if(data.get(n).getPossibleNumbers().size() == 2) {
@@ -76,7 +76,6 @@ public class LockedPairs {
                 }
             }
             firstPair = " ";
-            secondPair = "  ";
         }
         data.clear();
     }

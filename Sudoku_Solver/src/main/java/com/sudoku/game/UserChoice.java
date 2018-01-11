@@ -29,7 +29,7 @@ public class UserChoice {
 
     public static String solveTrying() {
         Scanner scanner = new Scanner(System.in);
-        String choice = " ";
+        String choice;
         System.out.println("----------\n");
         while(0 < 1) {
             System.out.println("Czy chcesz znaleźć rozwiązanie metodą prób i błędów?(t/n)");

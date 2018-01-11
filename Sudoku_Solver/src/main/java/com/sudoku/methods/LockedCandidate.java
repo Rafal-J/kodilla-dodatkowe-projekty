@@ -14,9 +14,7 @@ public class LockedCandidate {
         Boolean notFound = true;
         int numberCounter = 0;
         int rowCounter = 0;
-        int column = 0;
         int row = 0;
-        Field correctNumber = new Field(" ");
 
         while(foundNewCorrectNumber){
             foundNewCorrectNumber = false;
@@ -54,8 +52,6 @@ public class LockedCandidate {
         int numberCounter = 0;
         int columnCounter = 0;
         int column = 0;
-        int row = 0;
-        Field correctNumber = new Field(" ");
 
         while(foundNewCorrectNumber){
             foundNewCorrectNumber = false;

@@ -3,7 +3,7 @@ package com.sudoku;
 import com.sudoku.board.Board;
 import com.sudoku.board.Field;
 import com.sudoku.game.SolveByLogic;
-import com.sudoku.game.SolveByTry;
+import com.sudoku.game.SolveByTrial;
 import com.sudoku.game.UserChoice;
 import com.sudoku.game.Validator;
 
@@ -15,7 +15,7 @@ public class Sudoku {
     public static void main(String[] args) {
         System.out.println("ROZWIĄZYWARKA SUDOKU BY RJ");
         String choice = " ";
-        Field[][] myBoard = new Field[9][9];
+        Field[][] myBoard;
         while(!choice.equals("x")) {
             choice = UserChoice.startGame();
             if(!choice.equals("x")) {
@@ -32,7 +32,7 @@ public class Sudoku {
                     case INCOMPLETE: {
                         System.out.println("ROZWIĄZANIE JEST NIEKOMPLETNE");
                         if (UserChoice.solveTrying().equals("t")) {
-                            SolveByTry.findSolution(myBoard, myBoard);
+                            SolveByTrial.findSolution(myBoard, myBoard);
                             Board.printBoard(myBoard);
                             if(Validator.validateSolution(myBoard) == COMPLETE) {
                                 System.out.println("PRAWIDLOWE ROZWIĄZANIE");

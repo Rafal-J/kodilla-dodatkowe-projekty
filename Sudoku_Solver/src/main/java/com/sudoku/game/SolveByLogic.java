@@ -6,9 +6,9 @@ import com.sudoku.methods.*;
 public class SolveByLogic {
     public static Field[][] solveSudoku(Field[][] board){
 
-        int totalPossibleNumbersQty = 0;
+        int totalPossibleNumbersQty;
 
-        while(0 < 1) {
+        do {
             totalPossibleNumbersQty = Validator.countTotalPossibleNumbersQty(board);
 
             SmallSquareAnalyzer.analyze(board);
@@ -18,11 +18,7 @@ public class SolveByLogic {
             HiddenSingle.find(board);
             LockedCandidate.find(board);
             LockedPairs.find(board);
-
-            if(totalPossibleNumbersQty == Validator.countTotalPossibleNumbersQty(board)) {
-                break;
-            }
-        }
+            } while(totalPossibleNumbersQty > Validator.countTotalPossibleNumbersQty(board));
         return board;
     }
 }

@@ -2,7 +2,7 @@ package com.sudoku.board;
 
 public class Board {
     public static Field[][] prepareBoard(int choice) {
-        String[] textBoard = new String[9];
+        String[] textBoard;
         if(choice == 0) {
             textBoard = UserBoard.prepareBoard();
         }
