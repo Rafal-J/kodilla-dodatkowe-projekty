@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Scanner;
 
 public class UserChoice {
-    private static final List<String> CORRECTCHOICE = new ArrayList<>(Arrays.asList("0", "1", "2", "3", "4", "5", "6", "7", "8","x"));
+    private static final List<String> CORRECTCHOICE = new ArrayList<>(Arrays.asList("0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "x"));
     private static final List<String> YESORNO = new ArrayList<>(Arrays.asList("t", "n"));
 
     public static String startGame() {
@@ -15,7 +15,7 @@ public class UserChoice {
         System.out.println("----------\n" +
                 "Co chcesz zrobić?");
         while(0 < 1) {
-            System.out.println("Aby rozwiązać istniejące Sudoku, wybierz cyfrę od 1 do 8\n" +
+            System.out.println("Aby rozwiązać istniejące Sudoku, wybierz cyfrę od 1 do 9\n" +
             "Aby wprowadzić własne Sudoku, wybierz 0\n" +
             "Aby zakończyć grę, wybierz x");
             choice = scanner.nextLine();

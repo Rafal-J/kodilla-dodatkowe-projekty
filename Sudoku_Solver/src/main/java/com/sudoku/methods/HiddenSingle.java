@@ -1,9 +1,14 @@
 package com.sudoku.methods;
 
 import com.sudoku.board.Field;
+import com.sudoku.myanotation.SudokuSolvingMethod;
 
-public class HiddenSingle {
-    public static void find(Field[][] board) {
+import java.util.ArrayList;
+import java.util.List;
+
+@SudokuSolvingMethod
+public class HiddenSingle implements SudokuMethod {
+    public void solve(Field[][] board) {
         HiddenSingle.findInRow(board);
         HiddenSingle.findInColumn(board);
         HiddenSingle.findInSmallSquare(board);
@@ -15,7 +20,6 @@ public class HiddenSingle {
         int column = 0;
         int row = 0;
         Field correctNumber = new Field(" ");
-
         while(foundNewCorrectNumber){
             foundNewCorrectNumber = false;
             for(Integer number = 1; number < 10; number ++) {

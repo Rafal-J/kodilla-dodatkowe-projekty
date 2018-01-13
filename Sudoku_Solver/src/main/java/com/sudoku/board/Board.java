@@ -1,5 +1,9 @@
 package com.sudoku.board;
 
+import com.sudoku.methods.ColumnAnalyzer;
+import com.sudoku.methods.RowAnalyzer;
+import com.sudoku.methods.SmallSquareAnalyzer;
+
 public class Board {
     public static Field[][] prepareBoard(int choice) {
         String[] textBoard;
@@ -12,12 +16,20 @@ public class Board {
 
         Field[][] board = new Field[9][9];
         Field number;
-        for (int i = 0; i < 9; i++) {
-            for (int k = 0; k < 9; k++) {
-                number = new Field(textBoard[i].substring(k, k + 1));
-                board[i][k] = number;
+        for (int r = 0; r < 9; r++) {
+            for (int c = 0; c < 9; c++) {
+                number = new Field(textBoard[r].substring(c, c + 1));
+                board[r][c] = number;
             }
         }
+
+        SmallSquareAnalyzer square = new SmallSquareAnalyzer();
+        ColumnAnalyzer column = new ColumnAnalyzer();
+        RowAnalyzer row = new RowAnalyzer();
+
+        square.solve(board);
+        column.solve(board);
+        row.solve(board);
 
         return board;
     }

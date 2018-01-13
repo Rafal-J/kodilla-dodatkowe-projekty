@@ -1,12 +1,12 @@
 package com.sudoku.methods;
 
 import com.sudoku.board.Field;
+import com.sudoku.myanotation.SudokuSolvingMethod;
 
-public class SmallSquareAnalyzer {
+public class SmallSquareAnalyzer implements SudokuMethod {
     private final static String EMPTY = " ";
-    public static void analyze(Field[][] board){
-        int smallSquareLeftUpperCornerR = 0;
-        int smallSquareLeftUpperCornerC = 0;
+
+    public void solve(Field[][] board){
 
         for (int r = 0; r < 9; r++) {
             for (int c = 0; c < 9; c++){

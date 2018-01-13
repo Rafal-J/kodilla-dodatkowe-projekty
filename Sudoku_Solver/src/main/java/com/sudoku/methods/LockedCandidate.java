@@ -1,10 +1,12 @@
 package com.sudoku.methods;
 
 import com.sudoku.board.Field;
+import com.sudoku.myanotation.SudokuSolvingMethod;
 
-public class LockedCandidate {
+@SudokuSolvingMethod
+public class LockedCandidate implements SudokuMethod {
 
-    public static void find(Field[][] board) {
+    public void solve(Field[][] board) {
         LockedCandidate.findInSmallSquareInRow(board);
         LockedCandidate.findInSmallSquareInColumn(board);
     }

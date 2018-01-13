@@ -1,12 +1,16 @@
 package com.sudoku.methods;
 
 import com.sudoku.board.Field;
+import com.sudoku.myanotation.SudokuSolvingMethod;
+import javafx.util.Pair;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class LockedPairs {
-    public static void find(Field[][] board) {
+@SudokuSolvingMethod
+public class LockedPairs implements SudokuMethod {
+
+    public void solve(Field[][] board) {
         LockedPairs.findPairsInColumn(board);
         LockedPairs.findPairsInRow(board);
         LockedPairs.findPairsInSquare(board);
@@ -47,35 +51,30 @@ public class LockedPairs {
         }
     }
 
-     private static void analyze(List<Field> data) {
-        String firstPair = " ";
-        String secondPair;
-        String firstNumber;
-        String secondNumber;
+    private static void analyze(List<Field> data) {
+        Pair<String, String> firstPair = new Pair<>(" ", " ");
+        Pair<String, String> secondPair;
 
         for(int n = 0; n < 8; n++){
             if(data.get(n).getPossibleNumbers().size() == 2) {
-                firstPair = data.get(n).getPossibleNumbers().get(0) + data.get(n).getPossibleNumbers().get(1);
+                firstPair = new Pair(data.get(n).getPossibleNumbers().get(0), data.get(n).getPossibleNumbers().get(1));
             }
             for(int k = n + 1; k < 9; k++) {
                 if(data.get(k).getPossibleNumbers().size() == 2) {
-                    secondPair = data.get(k).getPossibleNumbers().get(0) + data.get(k).getPossibleNumbers().get(1);
+                    secondPair = new Pair(data.get(k).getPossibleNumbers().get(0), data.get(k).getPossibleNumbers().get(1));
                     if (firstPair.equals(secondPair)) {
-                        firstNumber = firstPair.substring(0,1);
-                        secondNumber = firstPair.substring(1,2);
                         data.remove(n);
                         data.remove(k-1);
 
                         for(int w = 0; w < data.size(); w++) {
-                            data.get(w).getPossibleNumbers().remove(firstNumber);
-                            data.get(w).getPossibleNumbers().remove(secondNumber);
+                            data.get(w).getPossibleNumbers().remove(firstPair.getKey());
+                            data.get(w).getPossibleNumbers().remove(firstPair.getValue());
                         }
                         data.clear();
                         return;
                     }
                 }
             }
-            firstPair = " ";
         }
         data.clear();
     }

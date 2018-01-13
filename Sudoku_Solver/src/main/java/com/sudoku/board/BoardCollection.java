@@ -96,6 +96,17 @@ public class BoardCollection {
                 "   62    "
         };
 
+        String[] board9 = {"  15 4 26",
+                " 5    4 1",
+                " 84216 53",
+                "54 1   69",
+                "168349572",
+                " 2 6 5  4",
+                "  5     8",
+                " 9   1235",
+                " 1 95 647"
+        };
+
         boards.add(board1);
         boards.add(board2);
         boards.add(board3);
@@ -104,6 +115,7 @@ public class BoardCollection {
         boards.add(board6);
         boards.add(board7);
         boards.add(board8);
+        boards.add(board9);
 
         return boards.get(selection - 1);
     }

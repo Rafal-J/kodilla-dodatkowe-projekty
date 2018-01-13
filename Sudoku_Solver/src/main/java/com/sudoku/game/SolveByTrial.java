@@ -6,28 +6,24 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class SolveByTrial {
-    private static final int COMPLETE = 0;
-    private static final int INCOMPLETE = 1;
-    private static final int INCORRECT = 2;
 
-    public static int findSolution(Field[][] deepCopyBoard, Field[][] originalBoard) {
+    public static Solution findSolution(Field[][] deepCopyBoard, Field[][] originalBoard) {
         int[] nextTryCoordinates = findNextTry(deepCopyBoard);
         List<Field[][]> boards = prepareListOfPossibleTries(deepCopyBoard, nextTryCoordinates);
-
         Field[][] possibleSolution;
-        int validation;
+        Solution validation;
 
         for(int tryNumber = 0; tryNumber < boards.size(); tryNumber++) {
             possibleSolution = SolveByLogic.solveSudoku(boards.get(tryNumber));
             validation = Validator.validateSolution(possibleSolution, originalBoard);
-            if(validation == INCOMPLETE) {
+            if(validation == Solution.INCOMPLETE) {
                 validation = SolveByTrial.findSolution(possibleSolution, originalBoard);
-                if(validation == COMPLETE) {
-                    return COMPLETE;
+                if(validation == Solution.COMPLETE) {
+                    return Solution.COMPLETE;
                 }
             }
         }
-        return INCORRECT;
+        return Solution.INCORRECT;
     }
 
     private static int[] findNextTry(Field[][] board) {

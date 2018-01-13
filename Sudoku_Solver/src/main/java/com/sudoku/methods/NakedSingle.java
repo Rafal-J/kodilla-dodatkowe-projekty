@@ -1,9 +1,11 @@
 package com.sudoku.methods;
 
 import com.sudoku.board.Field;
+import com.sudoku.myanotation.SudokuSolvingMethod;
 
-public class NakedSingle {
-    public static void find(Field[][] board) {
+@SudokuSolvingMethod
+public class NakedSingle implements SudokuMethod{
+    public void solve(Field[][] board) {
         String correctNumber = " ";
         Boolean foundNewCorrectNumber = true;
 
