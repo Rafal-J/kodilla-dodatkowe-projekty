@@ -5,13 +5,14 @@ import com.sudoku.methods.RowAnalyzer;
 import com.sudoku.methods.SmallSquareAnalyzer;
 
 public class Board {
-    public static Field[][] prepareBoard(int choice) {
+    public static Field[][] prepareBoard(String choice) {
         String[] textBoard;
-        if(choice == 0) {
+        int intChoice = Integer.parseInt(choice);
+        if(intChoice == 0) {
             textBoard = UserBoard.prepareBoard();
         }
         else {
-            textBoard = BoardCollection.getBoard(choice);
+            textBoard = BoardCollection.getBoard(intChoice);
         }
 
         Field[][] board = new Field[9][9];

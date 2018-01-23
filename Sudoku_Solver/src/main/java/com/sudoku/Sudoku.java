@@ -12,7 +12,7 @@ public class Sudoku {
         while(!choice.equals("x")) {
             choice = UserChoice.startGame();
             if(!choice.equals("x")) {
-                myBoard = Board.prepareBoard(Integer.parseInt(choice));
+                myBoard = Board.prepareBoard(choice);
                 System.out.println("START");
                 Board.printBoard(myBoard);
                 SolveByLogic.solveSudoku(myBoard);
